@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Todo App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="add-task-section">
+            <h1 id="task-heading">Add Task</h1>
+            <form action="" id="add-task-form">
+                <input type="text" class="input-field" name="add-task" id="add-task" placeholder="Enter your task!">
+                <input type="submit" value="Add Task" id="" class="btn btn-add">
+            </form>
+            <div id="error" class="text-red"></div>
+        </div>
+
+        <div id="show-tasks-section">
+            <h3>Tasks</h3>
+            <div id="tasks-section">
+                <div id="task-container">
+                    <input type="text" class="input-field" name="input" id="input-1" value="Task Value">
+                    <button type="button" id="edit-1" onclick="editTask(1)" class="btn btn-edit">Edit</button>
+                    <button type="button" id="delete-1" onclick="deleteTask(1)" class="btn btn-delete">Delete</button>
+                </div>
+
+                <div id="task-container">
+                    <input type="text" class="input-field" name="input" id="input-2" value="Task Value">
+                    <button type="button" id="edit-2" onclick="editTask(2)" class="btn btn-edit">Edit</button>
+                    <button type="button" id="delete-2" onclick="deleteTask(2)" class="btn btn-delete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
